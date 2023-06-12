@@ -15,3 +15,11 @@ class Customers(CustomerBase):
     
     class Config:
         orm_mode = True
+        
+class CustomerCreate(CustomerBase):
+    customer_number: str
+    name: str
+    
+class CustomerUpdate(CustomerBase):
+    customer_number: str
+    name: str
